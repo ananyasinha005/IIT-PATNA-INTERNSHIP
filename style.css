@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-screen background image */
+.im{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.im img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SHOPKART section */
+.cont{
+    position: absolute ;
+    top: 20px;
+    left: 20px;
+
+    background: rgba(188, 143, 143, 0.8);
+    padding: 50px;
+    border-radius: 10px;
+
+    z-index: 10;
+}
+
+.cont h3{
+    text-align: center;
+}
+.cont h4{
+    text-align: center;
+}
+
+/* Login form */
+form{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: rgba(255,255,255,0.9);
+    padding: 30px;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
+    z-index: 10;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+input{
+    width: 250px;
+    padding: 8px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
