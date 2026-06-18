@@ -15,10 +15,14 @@
         <H4>All products at one place! </H4>
     </div>
    <form action="/login-endpoint" method="POST">
+         <div class="form-group">
+            <label for="email">Email id</label>
+            <input type="text" id="email" name="email" placeholder="Enter email id" required>
+        </div>
         
         <!-- Username/Email Field -->
         <div class="form-group">
-            <label for="username">Username or Email</label>
+            <label for="username">Username</label>
             <input type="text" id="username" name="username" placeholder="Enter username" required>
         </div>
 
@@ -30,6 +34,10 @@
 
         <!-- Submit Button -->
         <button type="submit">Log In</button>
+        <p class="signup-link">
+    Don't have an account?
+    <a href="signup.php">Sign Up</a>
+</p>
         
     </form>
 
