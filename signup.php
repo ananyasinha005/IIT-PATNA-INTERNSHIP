@@ -15,9 +15,9 @@
         <H4>All products at one place! </H4>
     </div>
     <div class="fm">
-    <form method= POST>
+    <form action="signupsave.php" method= POST>
         <label for="email">Email</label>
-        <input type="text" id="username" name="username" placeholder="Enter username" required>
+        <input type="text" id="username" name="email" placeholder="Enter username" required>
         
         
         <label for="username">Create Username</label>
@@ -25,7 +25,11 @@
         
         
         <label for="password">Password</label>
-        <input type="text" id="username" name="username" placeholder="Enter username" required>
+        <input type="text" id="username" name="pass" placeholder="Enter username" required>
+
+        <label for="phone">Phone no.</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter phone no." required>
+        
         </div>
         <button type="submit">Sign In</button>
 </form>
