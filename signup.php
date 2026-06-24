@@ -1,3 +1,9 @@
+<?php 
+require_once "includes/csrf.php";
+require_once "includes/headers.php";
+require_once "includes/session.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,27 +18,65 @@
     </div> 
     <div class="cont">
         <h3>SHOPKART</h3>
-        <H4>All products at one place! </H4>
+        
     </div>
     <div class="fm">
-    <form action="signupsave.php" method= POST>
+    <form  class="login-form" action="signupsave.php" method= POST>
+    <input type="hidden"
+       name="csrf_token"
+       value="<?= generateCSRFToken(); ?>">
         <label for="email">Email</label>
-        <input type="text" id="username" name="email" placeholder="Enter username" required>
+        <input 
+type="email"
+id="email"
+name="email"
+maxlength="100"
+placeholder="Enter email"
+required>
         
         
         <label for="username">Create Username</label>
-        <input type="text" id="username" name="username" placeholder="Enter username" required>
+        <input 
+type="text" 
+id="username" 
+name="username"
+maxlength="50"
+placeholder="Enter username"
+required>
         
         
         <label for="password">Password</label>
-        <input type="text" id="username" name="pass" placeholder="Enter username" required>
+        <input 
+type="password" 
+id="password" 
+name="password" 
+placeholder="Enter password"
+minlength="8"
+required>
 
         <label for="phone">Phone no.</label>
-        <input type="text" id="phone" name="phone" placeholder="Enter phone no." required>
+        <input type="tel" 
+id="phone" 
+name="phone" 
+pattern="[0-9]{10}"
+maxlength="10"
+placeholder="Enter phone no."
+required> 
+
+        <select name="role" required>
+    <option value="Customer">Customer</option>
+    
+</select>
+
+
+
+
+
         
-        </div>
-        <button type="submit">Sign In</button>
+        <button type="submit" name="sign">Sign In</button>
+
 </form>
+</div>
 
 
     

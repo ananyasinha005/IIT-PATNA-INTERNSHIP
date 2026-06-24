@@ -1,0 +1,91 @@
+[2026-06-23 13:30:04] 
+        ERROR:
+        Undefined variable $_SESSION
+        FILE:
+        C:\xampp\htdocs\Project\homeloginchec.php
+        LINE:
+        26
+[2026-06-23 13:31:04] 
+        ERROR:
+        Undefined variable $_SESSION
+        FILE:
+        C:\xampp\htdocs\Project\homeloginchec.php
+        LINE:
+        26
+[2026-06-23 13:31:44] 
+        ERROR:
+        Undefined variable $_SESSION
+        FILE:
+        C:\xampp\htdocs\Project\homeloginchec.php
+        LINE:
+        26
+[2026-06-23 13:33:20] 
+        ERROR:
+        Undefined variable $_SESSION
+        FILE:
+        C:\xampp\htdocs\Project\homeloginchec.php
+        LINE:
+        26
+[2026-06-23 13:46:59] 
+        ERROR:
+        mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+        FILE:
+        C:\xampp\htdocs\Project\includes\mailer.php
+        LINE:
+        16
+[2026-06-23 13:59:20] USER: 34 
+        ERROR:
+        require_once(db_logger.php): Failed to open stream: No such file or directory
+        FILE:
+        C:\xampp\htdocs\Project\admin_orders.php
+        LINE:
+        11
+[2026-06-23 13:59:24] USER: 34 
+        ERROR:
+        require_once(db_logger.php): Failed to open stream: No such file or directory
+        FILE:
+        C:\xampp\htdocs\Project\admin_orders.php
+        LINE:
+        11
+[2026-06-23 14:02:23] USER: 34 
+        ERROR:
+        require_once(Project/includes/db_logger.php): Failed to open stream: No such file or directory
+        FILE:
+        C:\xampp\htdocs\Project\admin_orders.php
+        LINE:
+        11
+[2026-06-23 14:02:27] USER: 34 
+        ERROR:
+        require_once(Project/includes/db_logger.php): Failed to open stream: No such file or directory
+        FILE:
+        C:\xampp\htdocs\Project\admin_orders.php
+        LINE:
+        11
+[2026-06-23 14:11:41] USER: 34 
+        ERROR:
+        Undefined variable $log_type
+        FILE:
+        C:\xampp\htdocs\Project\admin_logs.php
+        LINE:
+        22
+[2026-06-23 19:11:07] USER: 34 
+        ERROR:
+        Undefined variable $log_type
+        FILE:
+        C:\xampp\htdocs\Project\admin_logs.php
+        LINE:
+        22
+[2026-06-23 19:11:10] USER: 34 
+        ERROR:
+        Undefined variable $log_type
+        FILE:
+        C:\xampp\htdocs\Project\admin_logs.php
+        LINE:
+        22
+[2026-06-24 06:47:15] USER: 34 
+        ERROR:
+        Undefined variable $log_type
+        FILE:
+        C:\xampp\htdocs\Project\admin_logs.php
+        LINE:
+        22

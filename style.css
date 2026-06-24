@@ -1,97 +1,433 @@
+/* =========================
+   SHOPKART GLOBAL UI
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
-/* Full-screen background image */
-.im{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
+
+body{
+    background:#f5f7fb;
+    color:#222;
 }
 
-.im img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+/* =========================
+   CONTAINERS
+========================= */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
 }
 
-/* SHOPKART section */
-.cont{
-    .cont{
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
 
-    text-align: center;
-    color: white;
+/* =========================
+   HEADINGS
+========================= */
 
-    z-index: 10;
-}
+h1,h2,h3{
+    color:#111827;
 }
 
-.cont h3{
-    text-align: center;
-    font-size: large;
-    font-size: 100px;
-}
-.cont h4{
-    text-align: center;
-    font-size: 40px;
-}
 
-/* Login form */
-form{
-    position: absolute;
 
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    background: rgba(255,255,255,0.9);
-    padding: 30px;
-
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-
-    z-index: 10;
-}
-
-.form-group{
-    margin-bottom: 15px;
-}
-
-input{
-    width: 250px;
-    padding: 8px;
-}
+/* =========================
+   BUTTONS
+========================= */
 
 button{
-    width: 100%;
-    padding: 10px;
-    cursor: pointer;
-    ;
+
+    background:#111827;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
 }
+
+
+button:hover{
+
+    background:#2563eb;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+/* =========================
+   INPUTS
+========================= */
+
+
+input,
+textarea,
+select{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    margin:8px 0;
+
+    outline:none;
+
+}
+
+
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    border-color:#2563eb;
+
+}
+
+
+
+/* =========================
+   CARDS
+========================= */
+
+
+.card{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+/* =========================
+   LINKS
+========================= */
+
+
+a{
+
+    text-decoration:none;
+
+    color:#2563eb;
+
+}
+
+
+a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+
+/* =========================
+   TABLES
+========================= */
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+
+
+th{
+
+    background:#111827;
+
+    color:white;
+
+    padding:14px;
+
+}
+
+
+
+td{
+
+    padding:12px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+
+
+tr:hover{
+
+    background:#f8fafc;
+
+}
+
+
+
+/* =========================
+   LOGIN PAGE BACKGROUND
+========================= */
+
+
+.im{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100vh;
+
+    z-index:-1;
+
+}
+
+
+
+.im img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+
+/* =========================
+   SHOPKART TITLE
+========================= */
+
+
+.cont{
+
+    position:absolute;
+
+    top:40px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    text-align:center;
+
+    z-index:10;
+
+}
+
+
+
+.cont h3{
+
+    font-size:80px;
+
+    color:black;
+
+}
+
+
+
+.cont h4{
+
+    font-size:40px;
+
+    color:black;
+
+}
+
+
+
+/* =========================
+   LOGIN FORM ONLY
+========================= */
+
+
+.login-form{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+
+    background:rgba(255,255,255,0.9);
+
+    padding:30px;
+
+    width:350px;
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.3);
+
+}
+
+
+
+.form-group{
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* Login inputs */
+
+.login-form input{
+
+    width:100%;
+
+}
+
+
+
+/* Login button */
+
+.login-form button{
+
+    width:150px;
+
+    display:block;
+
+    margin:15px auto 0;
+
+}
+
+
+
+/* =========================
+   OTHER FORMS
+========================= */
+
+
 .fm{
-    position: absolute;
-    flex-direction: column;
 
-    top: 50%;
-    left: 50%;
+    background:white;
 
-    transform: translate(-50%, -50%);
+    padding:30px;
 
-    background: rgba(255,255,255,0.9);
-    padding: 30px;
+    border-radius:15px;
 
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow:
 
-    z-index: 10;
+    0 5px 20px rgba(0,0,0,.1);
+
+}
+
+
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+
+img{
+
+    max-width:100%;
+
+}
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media(max-width:700px){
+
+    .cont h3{
+
+        font-size:50px;
+
+    }
+
+
+    .login-form{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    background:rgba(255,255,255,0.95);
+
+    padding:35px;
+
+    width:350px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+
+.login-form input{
+
+    width:100%;
+
+}
+
+
+
+.login-form button{
+
+    width:100%;
+
+}
+
 }
